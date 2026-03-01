@@ -1,0 +1,61 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f8ff;
+    min-height: 100vh;
+}
+
+.title {
+    font-size: 3rem;
+    color: #4a90e2;
+    margin-bottom: 20px;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+.scoring-panel {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 20px;
+}
+
+.slime {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #8bc34a;
+    position: relative;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    color: #777;
+}
